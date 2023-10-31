@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ASCII Art Generator</title>
+    <style>
+        * {
+            font-family: Montserrat, sans-serif;
+
+        }
+
+        body {
+            padding: 20px;
+            color: white;
+            background: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #asciiContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: aqua;
+        }
+
+        pre {
+            white-space: pre-line;
+        }
+
+        input {
+            padding: 5px 10px;
+            margin: auto 5px;
+        }
+
+        button {
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: arial;
+            font-size: 1em;
+            color: #FFFFFF;
+            background-color: #548dd4;
+            border-radius: 24px;
+            -webkit-border-radius: 24px;
+            -moz-border-radius: 24px;
+            border: 4px solid #FFFFFF;
+            box-shadow: 3px 3px 12px #444444;
+            -webkit-box-shadow: 3px 3px 12px #444444;
+            -moz-box-shadow: 3px 3px 12px #444444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ASCII Art Generator</h1>
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" placeholder="Your Name">
+    <button onclick="generateAsciiArt()">Generate</button>
+    <div id="asciiContainer"></div>
+
+    <p>______________________________________</p>
+
+    <p>If you like it!!! Please hit one like. ^^ Thx</p>
+
+    <p>______________________________________</p>
+
+    <p>
+        Based on an idea by <a href="https://www.sololearn.com/profile/105742"> Aleksandar Stevanovic on Sololearn</a>
+        in Python
+    </p>
+
+    <p>REPO: <a href="https://github.com/ventustyl/ASCII-Art-Generator" target="_blank">Ventustyl</a>
+    </p>
+</body>
+<script>
+    function printCharacter(c) {
+        switch (c) {
+            case 'A':
+                return "..######..\n..#....#..\n..######..\n..#....#..\n..#....#..\n\n";
+            case 'B':
+                return "..######..\n..#....#..\n..#####...\n..#....#..\n..######..\n\n";
+            case 'C':
+                return "..######..\n..#.......\n..#.......\n..#.......\n..######..\n\n";
+            case 'D':
+                return "..#####...\n..#....#..\n..#....#..\n..#....#..\n..#####...\n\n";
+            case 'E':
+                return "..######..\n..#.......\n..#####...\n..#.......\n..######..\n\n";
+            case 'F':
+                return "..######..\n..#.......\n..#####...\n..#.......\n..#.......\n\n";
+            case 'G':
+                return "..######..\n..#.......\n..#####...\n..#....#..\n..#####...\n\n";
+            case 'H':
+                return "..#....#..\n..#....#..\n..######..\n..#....#..\n..#....#..\n\n";
+            case 'I':
+                return "..######..\n....##....\n....##....\n....##....\n..######..\n\n";
+            case 'J':
+                return "..######..\n....##....\n....##....\n..#.##....\n..####....\n\n";
+            case 'K':
+                return "..#...#...\n..#..#....\n..##......\n..#..#....\n..#...#...\n\n";
+            case 'L':
+                return "..#.......\n..#.......\n..#.......\n..#.......\n..######..\n\n";
+            case 'M':
+                return "..#....#..\n..##..##..\n..#.##.#..\n..#....#..\n..#....#..\n\n";
+            case 'N':
+                return "..#....#..\n..##...#..\n..#.#..#..\n..#..#.#..\n..#...##..\n\n";
+            case 'O':
+                return "..######..\n..#....#..\n..#....#..\n..#....#..\n..######..\n\n";
+            case 'P':
+                return "..######..\n..#....#..\n..######..\n..#.......\n..#.......\n\n";
+            case 'Q':
+                return "..######..\n..#....#..\n..#.#..#..\n..#..#.#..\n..######..\n\n";
+            case 'R':
+                return "..######..\n..#....#..\n..#.##...\n..#...#...\n..#....#..\n\n";
+            case 'S':
+                return "..######..\n..#.......\n..######..\n.......#..\n..######..\n\n";
+            case 'T':
+                return "..######..\n....##....\n....##....\n....##....\n....##....\n\n";
+            case 'U':
+                return "..#....#..\n..#....#..\n..#....#..\n..#....#..\n..######..\n\n";
+            case 'V':
+                return "..#....#..\n..#....#..\n..#....#..\n...#..#...\n....##....\n\n";
+            case 'W':
+                return "..#....#..\n..#....#..\n..#.##.#..\n..##..##..\n..#....#..\n\n";
+            case 'X':
+                return "..#....#..\n...#..#...\n....##....\n...#..#...\n..#....#..\n\n";
+            case 'Y':
+                return "..#....#..\n...#..#...\n....##....\n....##....\n....##....\n\n";
+            case 'Z':
+                return "..######..\n......#...\n.....#....\n....#.....\n..######..\n\n";
+            case ' ':
+                return "..........\n..........\n..........\n..........\n\n";
+            case '.':
+                return "----..----\n\n";
+            default:
+                return "";
+        }
+    }
+
+    function generateAsciiArt() {
+        const nameInput = document.getElementById("nameInput");
+        const asciiContainer = document.getElementById("asciiContainer");
+        const name = nameInput.value.toUpperCase();
+
+        asciiContainer.innerHTML = '';
+
+        for (let i = 0; i < name.length; i++) {
+            const pre = document.createElement("pre");
+            pre.textContent = printCharacter(name[i]);
+            asciiContainer.appendChild(pre);
+        }
+    }
+</script>
+
+</html>
