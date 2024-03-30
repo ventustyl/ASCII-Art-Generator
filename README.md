@@ -1,55 +1,46 @@
 
-# ASCII Art Generator
+# Générateur d'Art ASCII 
 
-ASCII Art Generator is a simple web application that allows you to convert your name or any text into ASCII art. It's a fun and creative way to generate text-based art in the style of classic ASCII characters.
+Le Générateur d'Art ASCII est une application web simple qui vous permet de convertir votre nom ou tout texte en art ASCII. C'est une manière amusante et créative de générer de l'art basé sur du texte dans le style des caractères ASCII classiques.
 
-## Demo
+Vous pouvez essayer le Générateur d'Art ASCII en direct.
+https://ventustyl.github.io/ASCII-Art-Generator/
 
-You can try the ASCII Art Generator by visiting the [live demo](https://ventustyl.github.io/ASCII-Art-Generator/).
+## Fonctionnalités
 
-## Features
+-   Convertissez du texte en art ASCII en utilisant une variété de caractères.
+-   Personnalisez le texte d'entrée en entrant votre nom ou tout autre texte.
+-   Voyez l'art ASCII généré à la volée.
 
-- Convert text to ASCII art using a variety of characters.
-- Customize the input text by entering your name or any other text.
-- See the generated ASCII art on the fly.
+## Utilisation
 
-## Usage
+-   Entrez votre nom ou tout texte dans le champ de saisie "Entrez votre nom".
+-   Cliquez sur le bouton "Générer".
+-   Votre art ASCII sera affiché en dessous du champ de saisie.
 
-1. Enter your name or any text in the "Enter your name" input field.
-2. Click the "Generate" button.
-3. Your ASCII art will be displayed below the input field.
+## Technologies Utilisées
 
+-   HTML
+-   CSS
+-   JavaScript
 
-## Technologies Used
+Comment Contribuer Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
 
-- HTML
-- CSS
-- JavaScript
+1.  Forkez le répertoire.
+2.  Créez une nouvelle branche pour votre fonctionnalité ou correction de bug.
+3.  Faites vos changements et commitez-les.
+4.  Poussez vos changements vers votre fork.
+5.  Soumettez une demande de tirage (pull request) au répertoire principal.
 
-## How to Contribute
+## Licence 
+Ce projet est sous licence MIT.
 
-If you'd like to contribute to this project, please follow these steps:
+### Remerciements 
+Un merci spécial à Aleksandar Stevanovic pour l'adaptation en Python.
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Submit a pull request to the main repository.
+### Contact 
+Si vous avez des questions ou souhaitez prendre contact, n'hésitez pas à nous contacter :
 
-## License
+Eric Venturino
 
-This project is licensed under the MIT License 
-
-## Acknowledgments
-
-
-- Special thanks to [Aleksandar Stevanovic](https://www.sololearn.com/profile/105742) for the Python adaptation.
-
-## Contact
-
-If you have any questions or want to get in touch, feel free to contact us:
-
-- Your Name - Eric Venturino
-
-
-Enjoy creating ASCII art with the ASCII Art Generator!
+Amusez-vous à créer de l'art ASCII avec le Générateur d'Art ASCII !
